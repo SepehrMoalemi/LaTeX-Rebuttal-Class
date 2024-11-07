@@ -1,36 +1,20 @@
 \thispagestyle{empty}
 \setcounter{page}{0}
-% ! Somewhere talk about CCTA being accepted
-% ! Recommend other reviewers
-% ! Maybe give credit to reviewer 10 for pointing out the time dependency on T?
-% ! fix the verb tenses
 \begin{flushleft}
     Dear Associate Editor,
 
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    Thank you for the opportunity to re-submit our work to the IEEE Transactions on Automatic Control. We have incorporated the reviewers' helpful comments into our revised submission, and address each comment individually in the attached rebuttal document. In general, we believe our work was well-received by the reviewers. 
-    
-    Reviewer 2 agrees that our paper is a ``solid contribution'' and provides a thorough presentation of our theoretical contributions. 
-    
-    Reviewer 7 mainly focused on the control synthesis aspect of the simulation and also provided helpful suggestions for improving the clarity of our paper.
-    
-    Reviewer 10 appears to be less familiar with gain-scheduling and the role of the scheduling functions as design variables. We would like to discuss the following comments provided by this reviewer:
-    \begin{quote}\enquote{\textit{%
-        However, sometimes the authors claim to choose or design specific scheduling matrices which is very confusing.
-        }}%
-    \end{quote}
-    \begin{quote}\enquote{\textit{%
-        Also, in subsection A: scheduling matrix construction, the authors mention a few times design of the scheduling matrices.%
-        }}%
-    \end{quote}
-    It is clear that Reviewer 10 did not realize that the scheduling matrices are free design variables. Based on this fundamental misunderstanding, the reviewer also states
-    \begin{quote}\enquote{\textit{%
-        Obviously, this [pseudo-commutativity] prerequisite is too strong and restrictive which greatly blocks the applicability of the presented method to most systems. Especially, this pseudo-commutativity is with respect to the dissipativity matrices \(\mbf{S}_i\) which is hard to satisfy in general.%
-        }}%
-    \end{quote}
-    However, in Section~IV-A of our initial submission, we explicitly show that the scheduling matrices can be constructed to satisfy the pseudo-commutativity condition for any choice of \(\mbf{S}_i\). In the same section, we also show that the existing matrix-gain-scheduling architecture is a special case of our proposed architecture. 
+    Thank you for reviewing our submission to IEEE Control Systems Letters.
 
-    Finally, the specific comments provided by Reviewer 10 cover our paper up to Theorem~1 on page~4. The reviewer then states that ``similar issues and/or flaws exist for the rest of the paper'' without providing further detail. To the best of our ability, we have addressed the comments provided by Reviewer 10 and applied the changes to the rest of the paper.
+    In general, it appears our initial work was well-received by the majority of the reviewers, and we appreciate their valuable feedback. Both Reviewer 1 and Reviewer 7 found our paper to be ``well-written''. In fact, Reviewer 1 agrees that our first two contributions are substantial and suggest that we remove the sections relating to our 3rd and 4th contributions as ``the paper is good without them''.
+    
+    As we understand, our paper was rejected based on the concerns regarding the novelty and significance of our work. We have reviewed the comments provided by the reviewers and would like to address the comments regarding the novelty of our work.
+
+    As mentioned by Reviewer 8, the literature on this topic is vast. Since our paper exclusively considers the discrete-time passivity-based analysis of the gradient descent (GD) method, we provided a brief overview of other discrete-time input-output stability results in [3-10]. We appreciate the references provided by Reviewer 8 and have looked at the works of Dorfler, Pavel, Na Li, and Notarstefano. The passivity-based analysis of the GD method considered in these works is based in continuous-time. In fact, the reviewer's reference to ``A Passivity-Based Approach to Nash Equilibrium Seeking Over Networks'' by Gadjov and Pavel exclusively considers the passivity of GD in continues-time. However, in discrete time, the existing control interpretation of the GD method is strictly proper and therefore, can never be passive [15, Remark 2.7]. Consequently, the main contribution of our paper, as found in Section~III, is to provide a passive interpretation of the GD method in discrete-time.
+
+    Lastly, Reviewer 7 mentions that ``in the introduction, contribution (1) seems to be inappropriate, as earlier the paper says that something similar is done in [3-6]''. However, in the introduction, we explicitly state that [3-4] use the circle criterion, [5] uses the small-gain theorem, and [6] uses a dissipativity argument. Contrary to [3-6], we consider a passivity-based analysis of the GD method. The benefit of this approach is that we can guarantee the input-output stability of the GD method for a larger step size using the weak passivity theorem. Our paper is similar to [3-6] in that we also consider a general class of sector-bounded functions. We believe this is a significant novel contribution.
+
+    \textcolor{blue}{Something here asking them to reconsider the decision based on the above points.}
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
     Thank you,\\[1em]%
