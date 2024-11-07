@@ -1,0 +1,39 @@
+\documentclass[12pt]{Classes/decar-wsd}    % Document style
+\usepackage{Packages/decar-common}         % Commonly used commands and packages
+\usepackage{Packages/myFormat}             % Sep's Format
+\usepackage{Packages/rebuttal}             % Rebuttal comments and responses
+\usepackage{Packages/decar-post}           % Packages that must be loaded last
+
+\title{Input-Output Stability of Gradient Descent: A Passivity-Based Approach}
+\author{Sepehr Moalemi and James Richard Forbes}
+\submissionid{24-1204}
+\addbibresource{refs.bib}               % Bibtex file containing the references
+
+% * Define the path to the PDF file as a variable
+% \def\pdfPath{./../../../TAC_Paper_Latex/Build/main.pdf}
+
+\begin{document}
+    % * Note to Editor
+    % \input{note_to_editor}
+
+    % * Begin Rebuttal
+    \label{beginofcontent}
+        \maketitle
+        \input{Sections/0_dear_reviewers}
+        \newpage
+        \input{Sections/Reviewer_1}
+        \newpage
+        \input{Sections/Reviewer_7}
+        \newpage
+        \input{Sections/Reviewer_8}
+        \newpage
+        % \printbibliography
+    \label{endofcontent}
+
+    % * Print the stats
+    \printStats
+
+    % * Append the diff pdf of the revised manuscript
+    % \newpage
+    % \includepdf[pages=-]{\pdfPath} 
+\end{document}
