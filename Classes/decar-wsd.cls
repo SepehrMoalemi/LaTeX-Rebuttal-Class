@@ -23,7 +23,8 @@
 \rhead{}
 \lfoot{}
 \cfoot{\small Submission ID: \@submissionid}
-\lfoot{\small Author's Response to Reviews}
+% \lfoot{\small Author's Response to Reviews}
+\lfoot{\small Reviews}
 \rfoot{\small Page \thepage{}\ of \pageref{endofcontent}}
 \renewcommand{\headrulewidth}{0.0pt} 
 \renewcommand{\footrulewidth}{0.75pt}
@@ -36,7 +37,8 @@
   \chead{}
   \rhead{}
   \cfoot{\small Submission ID: \@submissionid}
-  \lfoot{\small Author's Response to Reviews}
+  % \lfoot{\small Author's Response to Reviews}
+  \lfoot{\small Reviews}
   \rfoot{\small Page \thepage{}\ of \pageref{endofcontent}}
   \renewcommand{\headrulewidth}{0.0pt} 
   \renewcommand{\footrulewidth}{0.75pt}
@@ -50,10 +52,10 @@
   \null
   \begin{center}%
   \let \footnote \thanks
-    {\LARGE \textbf{Authors Response to Reviews of \\``\@title''} \par}%
-    \vskip 1em%
+    {\LARGE \textbf{Reviews of ``\@title''} \par}%
+    \vskip 0.1em%
     {\large
-      \lineskip .5em%
+      \lineskip .1em%
       \begin{tabular}[t]{c}%
         \emph{\@author}
       \end{tabular}\par}%

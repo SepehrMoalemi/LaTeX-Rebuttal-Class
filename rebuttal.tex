@@ -10,7 +10,7 @@
 \addbibresource{refs.bib}               % Bibtex file containing the references
 
 % * Define the path to the PDF file as a variable
-% \def\pdfPath{./../../../TAC_Paper_Latex/Build/main.pdf}
+\def\pdfPath{moalemi_forbes_ACC_LCSS_2024_09_16_initial_submission.pdf}
 
 \begin{document}
     % * Note to Editor
@@ -26,14 +26,14 @@
         \input{Sections/Reviewer_7}
         \newpage
         \input{Sections/Reviewer_8}
-        \newpage
+        % \newpage
         % \printbibliography
     \label{endofcontent}
 
     % * Print the stats
-    \printStats
+    % \printStats
 
     % * Append the diff pdf of the revised manuscript
-    % \newpage
-    % \includepdf[pages=-]{\pdfPath} 
+    \newpage
+    \includepdf[pages=-]{\pdfPath} 
 \end{document}
