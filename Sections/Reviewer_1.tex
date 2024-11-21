@@ -2,7 +2,7 @@
 \renewcommand{\theequation}{R1.\arabic{equation}}
 \setcounter{equation}{0}
 % -------------------------------------------------------------------------------------------- %
-\begin{rebuttal}
+\begin{rebuttal}[resovled]
     % Comment
     {%
         The introduction is well-written, and it claims four main contributions. While I agree that the first two are indeed contributions. The last two on the list are presented without detail, making it difficult to judge whether they are suitable to be presented in this short communication.
@@ -12,7 +12,7 @@
     }%
 \end{rebuttal}
 % -------------------------------------------------------------------------------------------- %
-\begin{rebuttal}
+\begin{rebuttal}[resovled]
     % Comment
     {%
         The paper casts the gradient descent algorithm in an input-output analysis framework, where a linear system is interconnected with a static nonlinearity. The step value in the GD algorithm is a parameter defining the input matrix of the linear block. Then, through I-O stability conditions, it is possible to compute bounds on the iteration step such that the stability is guaranteed for nonlinearities satisfying the bounds (2). Such a class includes the set of m-strongly convex, L-smooth functions. The IO analysis is relevant thanks to the implication of internal stability, given the assumption of minimal realization. This is discussed in section IV-A, where the inputs are assumed to be zero, and the convergence is guaranteed since the output signals are in \(\ell_2\).
@@ -22,7 +22,7 @@
     }%
 \end{rebuttal}
 % -------------------------------------------------------------------------------------------- %
-\begin{rebuttal}
+\begin{rebuttal}[pending]
     % Comment
     {%
         Then, the authors briefly discuss the case with the step of GD varying along iterations, which implies that the linear part in the interconnection is time-varying. The Kronecker delta approach, taken from [11], is unclear and does not seem rigorous. How do the operators share the state? Do they need to have the same state? This needs clarification. 
@@ -32,7 +32,7 @@
     }%
 \end{rebuttal}
 % -------------------------------------------------------------------------------------------- %
-\begin{rebuttal}
+\begin{rebuttal}[pending]
     % Comment
     {%
         Remove altogether sections IV-B, IV-C. The paper is good without them. In my view, there is no space to rewrite and present this part in a clear manner. This implies completely reformulating the numerical results as some of the discussions are based on the handwaved presentation of IV-B, IV-C. My suggestion in this case would be to present a multidimensional example. 
@@ -42,7 +42,7 @@
     }%
 \end{rebuttal}
 % -------------------------------------------------------------------------------------------- %
-\begin{rebuttal}
+\begin{rebuttal}[resovled]
     % Comment
     {%
         Please develop the last sentence in IV-A better. What exactly do you mean by ``can be used as an additional stopping criterion \dots'' additional to what? Make it clear what the criterion is. 
@@ -52,7 +52,7 @@
     }%
 \end{rebuttal}
 % -------------------------------------------------------------------------------------------- %
-\begin{rebuttal}
+\begin{rebuttal}[resovled]
     % Comment
     {%
         Paragraph 1, VSP acronym is introduced before being defined. Paragraph 2, ``Positve real''. There is already a parameter delta, so the use of the Kronecker delta can be confusing.

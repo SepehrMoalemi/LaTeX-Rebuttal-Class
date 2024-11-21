@@ -24,7 +24,7 @@
 \lfoot{}
 \cfoot{\small Submission ID: \@submissionid}
 % \lfoot{\small Author's Response to Reviews}
-\lfoot{\small Reviews}
+\lfoot{\small Authors' Response to Reviews}
 \rfoot{\small Page \thepage{}\ of \pageref{endofcontent}}
 \renewcommand{\headrulewidth}{0.0pt} 
 \renewcommand{\footrulewidth}{0.75pt}
@@ -38,7 +38,7 @@
   \rhead{}
   \cfoot{\small Submission ID: \@submissionid}
   % \lfoot{\small Author's Response to Reviews}
-  \lfoot{\small Reviews}
+  \lfoot{\small Authors' Response to Reviews}
   \rfoot{\small Page \thepage{}\ of \pageref{endofcontent}}
   \renewcommand{\headrulewidth}{0.0pt} 
   \renewcommand{\footrulewidth}{0.75pt}
@@ -52,7 +52,7 @@
   \null
   \begin{center}%
   \let \footnote \thanks
-    {\LARGE \textbf{Reviews of ``\@title''} \par}%
+    {\LARGE \textbf{Authors' Response to Reviews of \\``\@title''} \par}%
     \vskip 0.1em%
     {\large
       \lineskip .1em%
