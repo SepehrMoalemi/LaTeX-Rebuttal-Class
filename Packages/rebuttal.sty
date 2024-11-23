@@ -32,7 +32,7 @@
 % Define the rebuttal environment that uses two separate boxes
 \NewDocumentEnvironment{rebuttal}{O{} +m +m}{%
     % Begin code: Comment Box
-    % \needspace{10\baselineskip}
+    \needspace{6\baselineskip}
     \stepcounter{reviewcommentcounter}%
     \stepcounter{NumberOfComments}%
 
@@ -82,28 +82,28 @@
         #2 % Content of the comment
     \end{tcolorbox}%
     % Begin code: Response Box
-    % \begin{tcolorbox}[
-    %     colframe=\ReviewColFrame, % Frame color same as the comment
-    %     colback=white, % Background color for the response
-    %     bottomrule=0.1mm,
-    %     toprule=0mm,
-    %     rightrule=0mm,
-    %     arc=0mm,
-    %     leftrule=0.3mm,
-    %     left=1mm,
-    %     right=1mm,
-    %     top=3mm,
-    %     bottom=1mm,
-    %     breakable,
-    %     fonttitle=\bfseries\color{black},
-    %     width=\textwidth,
-    %     before upper={\textbf{Response:} \par\setlength{\parskip}{3pt}}
-    % ]
-    % #3 % Content of the response
+    \begin{tcolorbox}[
+        colframe=\ReviewColFrame, % Frame color same as the comment
+        colback=white, % Background color for the response
+        bottomrule=0.1mm,
+        toprule=0mm,
+        rightrule=0mm,
+        arc=0mm,
+        leftrule=0.3mm,
+        left=1mm,
+        right=1mm,
+        top=3mm,
+        bottom=1mm,
+        breakable,
+        fonttitle=\bfseries\color{black},
+        width=\textwidth,
+        before upper={\textbf{Response:} \par\setlength{\parskip}{3pt}}
+    ]
+    #3 % Content of the response
 }
 {
     % End code
-    % \end{tcolorbox}
+    \end{tcolorbox}
 }
 
 % Define a command to print the statistics of the rebuttal

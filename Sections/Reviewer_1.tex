@@ -2,63 +2,71 @@
 \renewcommand{\theequation}{R1.\arabic{equation}}
 \setcounter{equation}{0}
 % -------------------------------------------------------------------------------------------- %
-\begin{rebuttal}[resovled]
+\begin{rebuttal}[resolved]
     % Comment
     {%
         The introduction is well-written, and it claims four main contributions. While I agree that the first two are indeed contributions. The last two on the list are presented without detail, making it difficult to judge whether they are suitable to be presented in this short communication.
     }%
     % Response
     {%
+        Thank you for your comment! We agree that the last two contributions were not presented with sufficient detail in the original manuscript. As such, we have removed the discussion on the gain-scheduling interpretation of the LPV GD controller in Section~IV-B, along with its corresponding contribution point in the introduction. Instead, Section~IV-B of the revised manuscript now focuses on the new proposed gain-scheduled modified GD controller in Figure~5.
     }%
 \end{rebuttal}
 % -------------------------------------------------------------------------------------------- %
-\begin{rebuttal}[resovled]
+\begin{rebuttal}[resolved]
     % Comment
     {%
-        The paper casts the gradient descent algorithm in an input-output analysis framework, where a linear system is interconnected with a static nonlinearity. The step value in the GD algorithm is a parameter defining the input matrix of the linear block. Then, through I-O stability conditions, it is possible to compute bounds on the iteration step such that the stability is guaranteed for nonlinearities satisfying the bounds (2). Such a class includes the set of m-strongly convex, L-smooth functions. The IO analysis is relevant thanks to the implication of internal stability, given the assumption of minimal realization. This is discussed in section IV-A, where the inputs are assumed to be zero, and the convergence is guaranteed since the output signals are in \(\ell_2\).
+        The paper casts the gradient descent algorithm in an input-output analysis framework, where a linear system is interconnected with a static nonlinearity. The step value in the GD algorithm is a parameter defining the input matrix of the linear block. Then, through I-O stability conditions, it is possible to compute bounds on the iteration step such that the stability is guaranteed for nonlinearities satisfying the bounds (2). Such a class includes the set of $m$-strongly convex, $L$-smooth functions. The IO analysis is relevant thanks to the implication of internal stability, given the assumption of minimal realization. This is discussed in Section IV-A, where the inputs are assumed to be zero, and the convergence is guaranteed since the output signals are in \(\ell_2\).
     }%
     % Response
     {%
+        Thank you for your detailed summary of our work.
     }%
 \end{rebuttal}
 % -------------------------------------------------------------------------------------------- %
 \begin{rebuttal}[pending]
     % Comment
     {%
-        Then, the authors briefly discuss the case with the step of GD varying along iterations, which implies that the linear part in the interconnection is time-varying. The Kronecker delta approach, taken from [11], is unclear and does not seem rigorous. How do the operators share the state? Do they need to have the same state? This needs clarification. 
+        Then, the authors briefly discuss the case with the step of GD varying along iterations, which implies that the linear part in the interconnection is time-varying. The Kronecker delta approach, taken from~\cite{Damaren_spr_gain_scheduling_1996}, is unclear and does not seem rigorous. How do the operators share the state? Do they need to have the same state? This needs clarification. 
     }%
     % Response
     {%
+        Thank you for your comment. In the revised manuscript, we have removed the Kronecker delta approach as it was not presented with sufficient detail. Nevertheless, we would like to clarify that the Kronecker delta approach is not taken from~\cite{Damaren_spr_gain_scheduling_1996}. The gain-scheduling architecture presented in~\cite{Damaren_spr_gain_scheduling_1996} is mainly used within the context of controlling robotic manipulators and employing the continues-time passivity theorem. As shown in~\cite{Damaren_spr_gain_scheduling_1996}, the gain-scheduling of passive subsystems using this gain-scheduling architecture results in an overall passive gain-scheduled system. In our original manuscript, we briefly showed that this property still holds in discrete-time. Admittedly, this was not presented with sufficient detail and therefore has been removed from the revised manuscript.
     }%
 \end{rebuttal}
 % -------------------------------------------------------------------------------------------- %
 \begin{rebuttal}[pending]
     % Comment
     {%
-        Remove altogether sections IV-B, IV-C. The paper is good without them. In my view, there is no space to rewrite and present this part in a clear manner. This implies completely reformulating the numerical results as some of the discussions are based on the handwaved presentation of IV-B, IV-C. My suggestion in this case would be to present a multidimensional example. 
+        Remove altogether Sections IV-B, IV-C. The paper is good without them. In my view, there is no space to rewrite and present this part in a clear manner. This implies completely reformulating the numerical results as some of the discussions are based on the handwaved presentation of IV-B, IV-C. My suggestion in this case would be to present a multidimensional example. 
     }%
     % Response
     {%
+        We apologize for the handwaved presentation of Sections IV-B, IV-C. In the revised manuscript, Section~IV has been heavily modified to expand the discussion around the proposed gain-scheduled modified GD controller \(\bar{\bm{\mathcal{G}}}_{\textrm{GS}}\) in Figure~5. We now explicitly state the minimal realization of \(\bar{\bm{\mathcal{G}}}_{\textrm{GS}}\) and provide additional detail on obtaining the lower bound on the feedthrough term \(D\eye\). We hope that these changes will make the presentation more clear.
+
+        Regarding the numerical results, the objective function in Figure~6 of the revised manuscript has also been used in~\cite{ugrinovskii,alex_petersen}. This objective function provides a valuable visualization of a non-convex function with a unique global minimizer and a sector-bounded gradient. The use of a multidimensional example would come at the cost of increased complexity and decreased interpretability. As such, we have decided to keep the current numerical results in the revised manuscript.
     }%
 \end{rebuttal}
 % -------------------------------------------------------------------------------------------- %
-\begin{rebuttal}[resovled]
+\begin{rebuttal}[resolved]
     % Comment
     {%
         Please develop the last sentence in IV-A better. What exactly do you mean by ``can be used as an additional stopping criterion \dots'' additional to what? Make it clear what the criterion is. 
     }%
     % Response
     {%
+        Thank you for comment. In the revised manuscript, Section~IV-A now explicitly proposes a new stopping criterion based on (23).
     }%
 \end{rebuttal}
 % -------------------------------------------------------------------------------------------- %
-\begin{rebuttal}[resovled]
+\begin{rebuttal}[resolved]
     % Comment
     {%
         Paragraph 1, VSP acronym is introduced before being defined. Paragraph 2, ``Positve real''. There is already a parameter delta, so the use of the Kronecker delta can be confusing.
     }%
     % Response
     {%
+        In the revised manuscript, we now define the VSP acronym before its first use and have corrected various typos. Moreover, the discussion around the Kronecker delta has been removed. Finally, Figure~6 of the original manuscript has been replaced by the more detailed Figure~5 in the revised version. We thank you for helping us improve the clarity of our manuscript.
     }%
 \end{rebuttal}
 % -------------------------------------------------------------------------------------------- %
