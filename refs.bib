@@ -24,7 +24,7 @@
     year = {1996},
 }
 
-@article{Forbes_Damaren_VSP_scheduling,
+@article{Forbes_Damaren,
     author = {Forbes, James Richard and Damaren, Christopher John},
     title = {{Design of Gain-Scheduled Strictly Positive Real Controllers Using Numerical Optimization for Flexible Robotic Systems}},
     journal = {Journal of Dynamic Systems, Measurement, and Control},
@@ -51,6 +51,13 @@
     volume = {63},
     number = {5},
     pages = {1531--1537},
+}
+
+@article{Ryan_conic,
+    author = {Brown, Jacob and Caverly, Ryan},
+    year = {2021},
+    journal={AIAA Guidance, Navigation, and Control Conference, AIAA SciTech Forum},
+    title = {{Conic Gain-Scheduled Control of an Aeroelastic Airfoil}},
 }
 
 @article{QSR,
@@ -189,7 +196,7 @@
     journal={IEEE Conference on Control Technology and Applications},
     year = {2024},
     location = {United Kingdom},
-    pages = {7--13},
+    note = {[Accepted]},
 }
 @book{Horn_Johnson_1991, 
     location={United Kingdom}, 
@@ -289,7 +296,7 @@
 }
 
 @book{van_der_schaft,
-	author={Van Der Schaft, Arjan},
+	author={van der Schaft, Arjan},
 	year = {2018},
 	publisher = {Springer International Publishing},
 	title = {{\(\mathcal{L}_2\)-Gain and Passivity Techniques in Nonlinear Control}},
@@ -435,14 +442,6 @@
     year = {2013},
 }
 
-@article{Ryan_conic,
-  author={Brown, Jacob J and Caverly, Ryan},
-  title={{Conic Gain-Scheduled Control of an Aeroelastic Airfoil}},
-  booktitle={AIAA Scitech 2021 Forum},
-  pages={1562},
-  year={2021},
-}
-
 @book{boyd2004convex,
     title={{Convex Optimization}},
     author={Boyd, S. P. and Vandenberghe, L.},
@@ -484,14 +483,112 @@
   edition = {2nd ed.},
 }
 
-@article{ortega2002interconnection,
-  title={{Interconnection and Damping Assignment Passivity-Based Control of Port-Controlled Hamiltonian Systems}},
-  author={Ortega, Romeo and Van Der Schaft, Arjan and Maschke, Bernhard and Escobar, Gerardo},
-  journal={Automatica},
-  volume={38},
+@article{Byrnes_Lin_Losslessness,
+    author={Byrnes, Christopher I and Lin, Wei},
+    title={{Losslessness, Feedback Equivalence, and the Global Stabilization of Discrete-Time Nonlinear Systems}},
+    journal={IEEE Transactions on Automatic Control},
+    year={1994},
+    volume={39},
+    number={1},
+    pages={83--98},
+}
+@book{feedback_systems,
+  title={{Feedback Systems: Input-Output Properties}},
+  author={Desoer, C.A. and Vidyasagar, M.},
+  year={1975},
+  location = {USA},
+  publisher={Academic Press},
+}
+@article{anderson,
+  title={{Discrete Positive-Real Functions and their Application to System Stability}},
+  author={Hitz, L and Anderson, BDO},
+  journal={Proceedings of the IEE},
+  volume={116},
+  number={1},
+  pages={153--155},
+  year={1969},
+}
+@article{hu_lessard,
+  title={{Control Interpretations for First-Order Optimization Methods}},
+  author={Hu, Bin and Lessard, Laurent},
+  journal={American Control Conference},
+  pages={3114--3119},
+  year={2017},
+}
+@article{lessard_recht_iqc,
+  title={{Analysis and Design of Optimization Algorithms via Integral Quadratic Constraints}},
+  author={Lessard, Laurent and Recht, Benjamin and Packard, Andrew},
+  journal={SIAM Journal on Optimization},
+  volume={26},
+  number={1},
+  pages={57--95},
+  year={2016},
+}
+@article{lessard_dissipativity,
+  title={{The Analysis of Optimization Algorithms: A Dissipativity Approach}},
+  author={Lessard, Laurent},
+  journal={IEEE Control Systems Magazine},
+  volume={42},
+  number={3},
+  pages={58--72},
+  year={2022},
+}
+
+@book{Polyak,
+  title={{Introduction to Optimization}},
+  author={Polyak, B.T.},
+  year={1987},
+  location = {USA},
+  publisher={Optimization Software, Inc.}
+}
+
+@book{haddad_Chellaboina,
+  title = {{Nonlinear Dynamical Systems and Control: A Lyapunov-Based Approach}},
+  author = {Wassim M. Haddad and VijaySekhar Chellaboina},
+  publisher = {Princeton University Press},
+  year = {2008},
+  location = {USA},
+}
+@article{polyak_hb,
+  title={{Some Methods of Speeding Up the Convergence of Iteration Methods}},
+  author={Polyak, Boris T},
+  journal={USSR Computational Mathematics and Mathematical Physics},
+  volume={4},
+  number={5},
+  pages={1--17},
+  year={1964},
+}
+@book{Nesterov,
+  title={{Introductory Lectures on Convex Optimization: A Basic Course}},
+  author={Nesterov, Yurii},
+  year={2013},
+  location = {USA},
+  publisher={Springer},
+}
+@article{triple_momentum,
+  title={{The Fastest known Globally Convergent First-Order Method for Minimizing Strongly Convex Functions}},
+  author={Van Scoy, Bryan and Freeman, Randy A and Lynch, Kevin M},
+  journal={IEEE Control Systems Letters},
+  volume={2},
+  number={1},
+  pages={49--54},
+  year={2017},
+}
+@article{seiler_iqc,
+  title={{Analysis of Gradient Descent with Varying Step Sizes using Integral Quadratic Constraints}},
+  author={Padmanabhan, Ram and Seiler, Peter},
+  journal={IEEE Transactions on Automatic Control},
+  year={2024},
+  note = {[To Appear]},
+}
+@article{simpson,
+  title={{Equilibrium-Independent Dissipativity with Quadratic Supply Rates}},
+  author={Simpson-Porco, John W},
+  journal={IEEE Transactions on Automatic Control},
+  volume={64},
   number={4},
-  pages={585--596},
-  year={2002},
+  pages={1440--1455},
+  year={2018},
 }
 
 @article{ugrinovskii,
@@ -518,4 +615,83 @@
     title   = {{A Generalized Accelerated Gradient Optimization Method}},
     pages={1904-1908},
     year = {2024},
+}
+
+@article{bryan_lessard_Lyapunov,
+  title={{A Tutorial on a Lyapunov-Based Approach to the Analysis of Iterative Optimization Algorithms}},
+  author={Van Scoy, Bryan and Lessard, Laurent},
+  journal={IEEE Conference on Decision and Control},
+  pages={3003--3008},
+  year={2023},
+}
+
+@article{Bottou_stochastic,
+  title={{On-line Learning for Very Large Datasets}},
+  author={Bottou, L{\'e}on and Le Cun, Yann},
+  journal={Applied Stochastic Models in Business and Industry},
+  volume={21},
+  number={2},
+  pages={137--151},
+  year={2005},
+}
+
+@article{Bottou_review,
+  author = {Bottou, L\'{e}on and Curtis, Frank E. and Nocedal, Jorge},
+  title = {{Optimization Methods for Large-Scale Machine Learning}},
+  journal = {SIAM Review},
+  volume = {60},
+  number = {2},
+  pages = {223-311},
+  year = {2018},
+}
+
+@article{Notarnicola_passivity_admm,
+  title={{Passivity-based Analysis of the ADMM Algorithm for Constraint-Coupled Optimization}},
+  author={Notarnicola, Ivano and Falsone, Alessandro},
+  journal={Automatica},
+  volume={146},
+  pages={110552},
+  year={2022},
+}
+
+@article{simpsons_loop_trans_pd_alg,
+  title={{An Interconnected Systems Approach to Convergence Analysis of Discrete-Time Primal-Dual Algorithms}},
+  author={Kelly, Spencer and Simpson-Porco, John W},
+  journal = {American Control Conference},
+  pages={662--668},
+  year={2024},
+}
+
+@article{dorfler_energy,
+  title={{Energy-Based Stabilization of Network Flows in Multi-Machine Power Systems}},
+  author={Arghir, Catalin and D{\"o}rfler, Florian},
+  journal={arXiv preprint arXiv:1804.09681},
+  year={2018}
+}
+
+@article{pavel_passivity_ct,
+  title={{A Passivity-Based Approach to Nash Equilibrium Seeking Over Networks}},
+  author={Gadjov, Dian and Pavel, Lacra},
+  journal={IEEE Transactions on Automatic Control},
+  volume={64},
+  number={3},
+  pages={1077--1092},
+  year={2018},
+}
+
+@article{li_passivity,
+  title={{Passivity-Based Distributed Optimization with Communication Delays using PI Consensus Algorithm}},
+  author={Hatanaka, Takeshi and Chopra, Nikhil and Ishizaki, Takayuki and Li, Na},
+  journal={IEEE Transactions on Automatic Control},
+  volume={63},
+  number={12},
+  pages={4421--4428},
+  year={2018},
+}
+@inproceedings{Notarstefano,
+  title={{A System Theoretical perspective to Gradient-Tracking Algorithms for Distributed Quadratic Optimization}},
+  author={Bin, Michelangelo and Notarnicola, Ivano and Marconi, Lorenzo and Notarstefano, Giuseppe},
+  booktitle={IEEE Conference on Decision and Control},
+  pages={2994--2999},
+  year={2019},
 }

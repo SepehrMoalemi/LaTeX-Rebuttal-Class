@@ -9,26 +9,36 @@
     }%
     % Response
     {%
+        Thank you for your kind words!
     }%
 \end{rebuttal}
 % -------------------------------------------------------------------------------------------- %
 \begin{rebuttal}[resolved]
     % Comment
     {%
-        In the introduction, contribution (1) seems to be inappropriate, as earlier the paper says that something similar is done in [3-6].
+        In the introduction, contribution (1) seems to be inappropriate, as earlier the paper says that something similar is done in~\cite{ugrinovskii,alex_petersen,hu_lessard,lessard_dissipativity}.
     }%
     % Response
     {%
+        We apologize for the confusion. In the original manuscript, we state that 
+        \begin{quote}\textcolor{gray}{\enquote{%
+            Similar to~\cite{ugrinovskii,alex_petersen,hu_lessard,lessard_dissipativity}, this paper considers the general class of possibly non-convex functions, having a unique global minimizer and a sector-bounded gradient.%
+            }}%
+        \end{quote}
+        To clarify, our paper is similar to~\cite{ugrinovskii,alex_petersen,hu_lessard,lessard_dissipativity} in that we also consider the same class of functions. In summary,~\cite{ugrinovskii,alex_petersen} use the circle criterion,~\cite{hu_lessard} uses the small-gain theorem, and~\cite{lessard_dissipativity} uses a dissipativity argument to analyze the stability of first-order optimization algorithms. Moreover, the analysis in~\cite{ugrinovskii,alex_petersen} does not consider the GD method. 
+        
+        Contrary to~\cite{ugrinovskii,alex_petersen,hu_lessard,lessard_dissipativity}, our paper uses a \textbf{discrete-time passivity-based} analysis to guarantee the input-output stability of the GD method. The benefit of this approach is that we can guarantee the input-output stability of the GD method for a \textbf{larger step size} using the weak passivity theorem. Additionally, this passive systems interpretation creates an opportunity to use other passivity-based results, such as passivity-based gain-scheduling. We hope this clarifies the significance of our first contribution.
     }%
 \end{rebuttal}
 % -------------------------------------------------------------------------------------------- %
 \begin{rebuttal}[pending]
     % Comment
     {%
-        If I understand correctly, the main technique is the reformulation by adding $D$ terms in Figure~3. At a high level, this seems like a small modification, and even though it may be a new way to study gradient descent, it is not clear what are the benefits of this view points. To be more clear, I think the paper does not prove stability/convergence under any new stepsize rules, that were not known before by other methods. This is discussed in Section IV-A if I am right.
+        If I understand correctly, the main technique is the reformulation by adding $D$ terms in Figure~3. At a high level, this seems like a small modification, and even though it may be a new way to study gradient descent, it is not clear what are the benefits of this view points. To be more clear, I think the paper does not prove stability/convergence under any new step size rules, that were not known before by other methods. This is discussed in Section IV-A if I am right.
     }%
     % Response
     {%
+        Thank you for your comment. Indeed, the major contribution of this paper is presenting a passivity-based analysis of the GD method in discrete-time by introducing a feedthrough term via a loop transformation. In the revised manuscript, we now highlight the benefits of this approach in Section~IV\@. It is well known that for an $L$-smooth and $m$-strongly convex function, the GD method is globally convergent for a fixed step size \(\alpha \in \mleft( 0, 2/L \mright)\)~\cite[Theorem~2]{Polyak}. Moreover, a counterexample is discussed in~\cite{Polyak} to show that the \textbf{GD does not converge} for \(\alpha \geq 2/L\). However, in Section~IV-A of the revised manuscript, we show that the weak passivity theorem can be used to \textbf{guarantee the input-output stability} of the GD method for \(\alpha = 2/L\). The nuance here is that for this choice of \(\alpha\), the weak passivity theorem cannot guarantee that the series of iterates produced by the GD method converges to the unique global minimizer \(\mbf{x}^\ast\). Instead, the weak passivity theorem states that the quantity \(\mbf{x}^k-D \nabla f(\mbf{x}^k ) \to \mbf{x}^\ast\). In Section~IV-A of the revised manuscript, this relation is then used to propose the \textbf{new stopping criterion} in (23) for the GD method. As such, the proposed passivity-based analysis in this work can guarantee the input-output stability of the GD method for a larger step size.
     }%
 \end{rebuttal}
 % -------------------------------------------------------------------------------------------- %
@@ -39,6 +49,7 @@
     }%
     % Response
     {%
+        Thank you for your interest in our work. Given the page limit constraint, we have omitted the discussion on the gain-scheduling interpretation of the LPV GD controller in \mbox{Section~IV-B} of the original manuscript. Instead, Section~IV-B of the revised manuscript now focuses on the new proposed gain-scheduled modified GD controller in Figure~5. Indeed, one should expect other momentum-based methods to outperform the proposed gain-scheduled modified GD controller in terms of convergence speed. A direct extension of the work presented in this paper is to consider the passivity-based analysis of such momentum-based methods. From there, it may be possible to construct similar gain-scheduled controllers for these methods!
     }%
 \end{rebuttal}
 % -------------------------------------------------------------------------------------------- %
