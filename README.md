@@ -60,3 +60,4 @@ This repository provides a LaTeX class for organizing responses to peer reviews 
 
 ```latex
 \appenddiffPDF
+```
