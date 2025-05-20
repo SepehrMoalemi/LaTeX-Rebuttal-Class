@@ -1,0 +1,30 @@
+\documentclass[12pt]{Classes/rebuttal}    % Document style
+\usepackage[backend=biber,
+            bibstyle=ieee,
+            citestyle=numeric-comp,
+            doi=false,
+            isbn=false]{biblatex}
+
+% Required Fields:
+\title{Title of the Paper}
+\author{John Doe and Jane Smith}
+\submissionid{123456}                  
+\diffPDFpath{Demo PDF.pdf}                % Path to the diff PDF to be appended
+\addbibresource{refs.bib}
+
+\begin{document}
+    % Begin Rebuttal
+    \label{beginofcontent}
+        \maketitle
+        \input{Sections/0_dear_reviewers}
+        \newpage
+        \input{Sections/Reviewer_1}
+        \printbibliography
+    \label{endofcontent}
+    
+    % Print the stats
+    \printStats
+
+    % Append the diff pdf of the revised manuscript 
+    \appenddiffPDF
+\end{document}
