@@ -34,7 +34,6 @@
 % Notes:
 % - color-coded reviewer comments (blue, green, orange, red)
 % - Automatically count and classify reviewer comments
-% - Auto-resets comment counter per section.
 % - Appends a diff PDF at the end of the document
 % --------------------------------------------------------------------------------
 
